@@ -47,6 +47,7 @@ require.ensure([], function (require) {
 			SubmitPage = require("js/pages/submit.js");
 
 	$(()=> {
+		console.log("abc");
 		$(document.body).append(`<div id="app"></div>`);
 		ReactDOM.render(
 				<Device className="v-coach-app"
