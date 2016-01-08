@@ -1,7 +1,7 @@
 .b-radialmenu
 	padding 10px
 	display inline-block
-	box-shadow 0 1px 5px 2px rgba(black,0.25)
+	box-shadow 0 1px 5px 2px rgba(black, 0.25)
 	border-radius 50%
 	background-color white
 
@@ -88,16 +88,16 @@
 		overflow hidden
 		background-color whitesmoke
 		-webkit-transform scale(1)
-		box-shadow inset 0 0 2em 1px rgba(black,0.5)
+		box-shadow inset 0 0 2em 1px rgba(black, 0.5)
 		-webkit-backface-visibility hidden
-		-webkit-mask-image -webkit-radial-gradient(circle,#fff,#000)
+		-webkit-mask-image -webkit-radial-gradient(circle, #fff, #000)
 
 		&:before
 			content ""
 			display block
 			width 100%
 			height 100%
-			box-shadow inset 0 0 1px 1px rgba(black,0.55)
+			box-shadow inset 0 0 1px 1px rgba(black, 0.55)
 			border-radius 50%
 			position absolute
 			z-index 1
@@ -112,15 +112,15 @@
 			left 50%
 			background-color white
 			border-radius 50%
-			transform translate(-50%,-50%)
-			box-shadow inset 0 0 1em 1px rgba(black,0.35)
+			transform translate(-50%, -50%)
+			box-shadow inset 0 0 1em 1px rgba(black, 0.35)
 			border 2px solid white
 			overflow hidden
 			text-align center
 			z-index 9999
-			-webkit-mask-image -webkit-radial-gradient(circle, white, black)
+			-webkit-mask-image -webkit-radial-gradient(circle,  white,  black)
 			color white
-			text-shadow 1px 1px rgba(black,0.8)
+			text-shadow 1px 1px rgba(black, 0.8)
 			font-size 1.25em
 
 			&.-blank
@@ -139,7 +139,7 @@
 				position absolute
 				top 50%
 				left 50%
-				transform translate(-50%,-50%)
+				transform translate(-50%, -50%)
 
 	.item-svg
 		filter brightness(100%)
@@ -147,7 +147,7 @@
 		display inline-block
 		opacity 0.85
 
-		&.-active,&:hover
+		&.-active, &:hover
 			filter url("#brighten")
 			-ms-filter brightness(120%)
 			display block
@@ -168,8 +168,8 @@
 		-webkit-backface-visibility hidden
 		transition all 1s
 
-		&:hover,&.-active
-			box-shadow 0 -3px 6px 6px rgba(white,.8)
+		&:hover, &.-active
+			box-shadow 0 -3px 6px 6px rgba(white, .8)
 			z-index 999
 			.item-content
 				img.item-image

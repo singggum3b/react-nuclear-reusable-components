@@ -1,9 +1,10 @@
 //====================REACT======================
-var Popup = require('js/components/popup');
-var Layer = require('js/components/layer');
+var Popup = require("js/components/popup");
+var Layer = require("js/components/layer");
 var Button = require("js/components/button");
 
 var Dialog = React.createClass({
+	displayName: "Dialog",
 	propTypes: {
 		device: React.PropTypes.oneOf(DEVICE),
 		dialog: React.PropTypes.object

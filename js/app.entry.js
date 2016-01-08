@@ -25,7 +25,7 @@ require.ensure([], function (require) {
 	PreloadList.map(function (img, index) {
 		function requested() {
 			ImgLoaded = ImgLoaded.push(img);
-			console.log(ImgLoaded.size, PreloadList.size);
+			console.log(`Image loaded : ${ImgLoaded.size}/${PreloadList.size}`);
 			if (ImgLoaded.size == PreloadList.size) {
 				MediaStore.actions.imagesLoaded();
 			}
@@ -47,7 +47,6 @@ require.ensure([], function (require) {
 			SubmitPage = require("js/pages/submit.js");
 
 	$(()=> {
-		console.log("abc");
 		$(document.body).append(`<div id="app"></div>`);
 		ReactDOM.render(
 				<Device className="v-coach-app"

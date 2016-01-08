@@ -9,7 +9,9 @@ var IndexPage = React.createClass({
 	displayName: "IndexPage",
 	propTypes: {
 		device: React.PropTypes.string,
-		children: React.PropTypes.node
+		children: React.PropTypes.node,
+		route: React.PropTypes.object,
+		history: React.PropTypes.object
 	},
 	mixins: [Reactor.ReactMixin],
 	getDataBindings() {

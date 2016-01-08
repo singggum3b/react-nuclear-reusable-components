@@ -16,16 +16,16 @@ box-sizing-reset()
 normalize()
 
 // ========Font====================================
-html, button, input, select, textarea,
+html,  button,  input,  select,  textarea,
 .pure-g [class *= "pure-u"]
-	font-family $font-body, Times, serif
-	-webkit-font-smoothing: antialiased;
+	font-family $font-body,  Times,  serif
+	-webkit-font-smoothing antialiased
 
 h2.title
-	font-family $font-headline, Times, serif
+	font-family $font-headline,  Times,  serif
 	font-weight normal
 .alt-title
-	font-family $font-headline-alt, Times, serif
+	font-family $font-headline-alt,  Times,  serif
 
 // ========Common====================================
 
@@ -39,7 +39,7 @@ body
 	padding 0
 
 
-.phone, .tablet
+.phone,  .tablet
 	cursor pointer
 	body
 		cursor pointer
@@ -58,7 +58,7 @@ body
 /* For IE 6/7 (trigger hasLayout) */
 
 .waypoint-anchor
-	// Fix for IE , FF
+	// Fix for IE ,  FF
 	display block
 	height 1px
 
@@ -102,7 +102,7 @@ body
 		position absolute
 		right 0
 		left 0
-		transform translate(0, -100%)
+		transform translate(0,  -100%)
 
 //====================================
 .content
@@ -111,7 +111,7 @@ body
 		top 40%
 		left 50%
 		height 124px
-		transform translate(-50%,0)
+		transform translate(-50%, 0)
 		text-align center
 
 		img
@@ -129,7 +129,7 @@ arrow-upper(color)
 		width 0
 		position absolute
 		pointer-events none
-		border-color rgba(color, 0)
+		border-color rgba(color,  0)
 		border-bottom-color color
 		border-width 8px
 		margin-left -8px
@@ -150,7 +150,7 @@ arrow-upper(color)
 	background-color white
 	display inline-block
 	color gray
-	&:hover, &.is-hover
+	&:hover,  &.is-hover
 		border-color black
 		color black
 	.button
