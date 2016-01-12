@@ -63,7 +63,7 @@ const Bag = React.createClass({
 				<div ref="bag" className="v-bag" style={{width: state.width }}>
 					<Bag.BagControl size={props.size} width={state.width}></Bag.BagControl>
 					<ReactCanvas.Surface left={0} top={0} width={state.width} height={state.width}>
-						<ReactCanvas.Image style={this.getBagStyle(state)} src="/img/bag.png"></ReactCanvas.Image>
+						<ReactCanvas.Image style={this.getBagStyle(state)} src={require("img/bag.png")}></ReactCanvas.Image>
 						{bagFeature.map((feature)=> {
 							return this.buildBagFeature(props, state, feature);
 						})}

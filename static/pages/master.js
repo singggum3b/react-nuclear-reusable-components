@@ -21,7 +21,7 @@ var App = React.createClass({
 		}
 	},
 	render() {
-		return (true) ? (
+		return this.state.imagesLoaded ? (
 				<div className="content">
 					<Dialog dialog={this.state.dialog} />
 					{this.props.children && React.cloneElement(this.props.children, {

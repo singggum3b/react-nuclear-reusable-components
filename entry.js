@@ -1,5 +1,5 @@
 require(".css/style.css");
-require("js/lib.entry.js");
+require("js/lib.entry.js")(window);
 require("js/app.entry.js");
 
 //=================HMR Management=======================
