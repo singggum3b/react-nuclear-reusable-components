@@ -1,6 +1,6 @@
 //==================FLUX=========================
-var Reactor = require("js/reactor.js");
-var StatStore = require("js/statistic-store");
+var Reactor = require("client/js/reactor.js");
+var StatStore = require("client/js/statistic-store");
 //===============================================
 var Chart = require("./charts");
 var Table = require("./table");

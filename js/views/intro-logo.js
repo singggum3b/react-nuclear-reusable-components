@@ -8,7 +8,7 @@ var IntroLogo = React.createClass({
 																 transitionEnterTimeout={500} transitionLeaveTimeout={500}>
 					{<div className="content">
 						<h1 className="logo">
-							<a href="/" title="COACH"> <img src={require("img/SVG_logo.svg")} alt="COACH" title="COACH" /></a>
+							<a href="/" title="COACH"> <img src={require("client/img/SVG_logo.svg")} alt="COACH" title="COACH" /></a>
 						</h1>
 					</div>}
 				</ReactCSSTransitionGroup>

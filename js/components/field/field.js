@@ -1,4 +1,4 @@
-var V = require("js/validator");
+var V = require("client/js/validator");
 
 var Field = React.createClass({
 	displayName: "Field",

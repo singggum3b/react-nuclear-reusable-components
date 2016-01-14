@@ -1,4 +1,4 @@
-var Reactor = require("js/reactor.js");
+var Reactor = require("client/js/reactor.js");
 
 Reactor.registerStores({
 	media: require("./store")

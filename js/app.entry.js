@@ -1,6 +1,6 @@
 //====================================================
 //Manually optimize bundle - move common module to entry chunk
-require.include("js/data/bag-data");
+require.include("client/js/data/bag-data");
 
 //====================================================
 const {IndexRoute, Route} = ReactRouter;
@@ -18,9 +18,9 @@ let DeviceList = [
 
 //===============================PRELOAD ASSETS==============
 require.ensure([], function (require) {
-	var MediaStore = require("js/media");
+	var MediaStore = require("client/js/media");
 	var ImgLoaded = Immutable.fromJS([]);
-	var PreloadList = require("js/data/bag-data").ImageList;
+	var PreloadList = require("client/js/data/bag-data").ImageList;
 
 	PreloadList.map(function (img, index) {
 		function requested() {
@@ -41,10 +41,10 @@ require.ensure([], function (require) {
 //=====================APP=======================
 require.ensure([], function (require) {
 	var {Router,Route,IndexRoute}= ReactRouter;
-	var Device = require("js/components/device");
-	var MasterPage = require("js/pages/master.js"),
-			IndexPage = require("js/pages/index.js"),
-			SubmitPage = require("js/pages/submit.js");
+	var Device = require("client/js/components/device");
+	var MasterPage = require("client/js/pages/master.js"),
+			IndexPage = require("client/js/pages/index.js"),
+			SubmitPage = require("client/js/pages/submit.js");
 
 	$(()=> {
 		$(document.body).append(`<div id="app"></div>`);

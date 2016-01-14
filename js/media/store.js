@@ -1,5 +1,5 @@
 var actionTypes = require("./constant").action;
-var Reactor = require("js/reactor.js");
+var Reactor = require("client/js/reactor.js");
 
 //Media match store
 var media = new Nuclear.Store({

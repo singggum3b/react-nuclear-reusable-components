@@ -1,6 +1,6 @@
 //==================FLUX=========================
-var Reactor = require("js/reactor.js");
-var Media = require("js/media");
+var Reactor = require("client/js/reactor.js");
+var Media = require("client/js/media");
 // ============================================
 
 const ChartCore = React.createClass({

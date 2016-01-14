@@ -1,7 +1,7 @@
 //====================REACT======================
-var Popup = require("js/components/popup");
-var Layer = require("js/components/layer");
-var Button = require("js/components/button");
+var Popup = require("client/js/components/popup");
+var Layer = require("client/js/components/layer");
+var Button = require("client/js/components/button");
 
 var Dialog = React.createClass({
 	displayName: "Dialog",

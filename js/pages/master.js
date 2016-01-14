@@ -1,10 +1,10 @@
 var {Router,RouteHandler,Link}= ReactRouter;
 //==================FLUX=========================
-var Reactor = require("js/reactor.js");
-var Media = require("js/media");
-var BagStore = require("js/bag-store");
+var Reactor = require("client/js/reactor.js");
+var Media = require("client/js/media");
+var BagStore = require("client/js/bag-store");
 //===============================================
-var Dialog = require("js/components/dialog");
+var Dialog = require("client/js/components/dialog");
 
 var App = React.createClass({
 	displayName: "App",

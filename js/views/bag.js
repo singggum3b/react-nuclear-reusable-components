@@ -1,10 +1,10 @@
 //==================FLUX=========================
-var Reactor = require("js/reactor.js");
-var BagStore = require("js/bag-store");
+var Reactor = require("client/js/reactor.js");
+var BagStore = require("client/js/bag-store");
 //====================Components=======================
-var RadialMenu = require("js/components/radialmenu-svg");
-var Layer = require("js/components/layer");
-var Button = require("js/components/button");
+var RadialMenu = require("client/js/components/radialmenu-svg");
+var Layer = require("client/js/components/layer");
+var Button = require("client/js/components/button");
 //====================================================
 
 const Bag = React.createClass({
@@ -63,7 +63,7 @@ const Bag = React.createClass({
 				<div ref="bag" className="v-bag" style={{width: state.width }}>
 					<Bag.BagControl size={props.size} width={state.width}></Bag.BagControl>
 					<ReactCanvas.Surface left={0} top={0} width={state.width} height={state.width}>
-						<ReactCanvas.Image style={this.getBagStyle(state)} src={require("img/bag.png")}></ReactCanvas.Image>
+						<ReactCanvas.Image style={this.getBagStyle(state)} src={require("client/img/bag.png")}></ReactCanvas.Image>
 						{bagFeature.map((feature)=> {
 							return this.buildBagFeature(props, state, feature);
 						})}

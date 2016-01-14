@@ -2,7 +2,11 @@ module.exports = function (window) {
 	//DO NOT CHANGE variable names
 	require("babel-polyfill");
 
-	window.jQuery = window.$ = require("jquery");
+	if (process && process.title != "browser") {
+		window.jQuery = window.$ = require("jquery")(window);
+	} else {
+		window.jQuery = window.$ = require("jquery");
+	}
 	/*require("es5-shim/es5-shim.min.js");
 	 require("es5-shim/es5-sham.min.js");
 	 require("console-polyfill");*/
@@ -88,7 +92,7 @@ module.exports = function (window) {
 //=======================Add some filters========================================
 	$(function () {
 		var wrapper = document.createElement("div");
-		$(wrapper).html(require("!!html!stylus/SVGfilter.svg"));
+		$(wrapper).html(require("!!html!client/stylus/SVGfilter.svg"));
 		$("body").append(wrapper);
 	});
 

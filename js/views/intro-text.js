@@ -1,6 +1,6 @@
 //==================FLUX=========================
-var Reactor = require("js/reactor.js");
-var BagStore = require("js/bag-store");
+var Reactor = require("client/js/reactor.js");
+var BagStore = require("client/js/bag-store");
 
 var IntroText = React.createClass({
 	displayName: "IntroText",

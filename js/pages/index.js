@@ -1,9 +1,9 @@
 //==================FLUX=========================
-var Reactor = require("js/reactor.js");
+var Reactor = require("client/js/reactor.js");
 //===============================================
-var Bag = require("js/views/bag");
-var IntroLogo = require("js/views/intro-logo");
-var IntroText = require("js/views/intro-text");
+var Bag = require("client/js/views/bag");
+var IntroLogo = require("client/js/views/intro-logo");
+var IntroText = require("client/js/views/intro-text");
 
 var IndexPage = React.createClass({
 	displayName: "IndexPage",

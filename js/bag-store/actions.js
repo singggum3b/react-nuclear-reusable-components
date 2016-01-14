@@ -1,4 +1,4 @@
-var Reactor = require("js/reactor.js");
+var Reactor = require("client/js/reactor.js");
 var actionTypes = require("./constant").action;
 var getters = require("./getters");
 //=============================================

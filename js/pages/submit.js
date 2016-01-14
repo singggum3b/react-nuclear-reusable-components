@@ -1,10 +1,10 @@
 //==================FLUX=========================
-var Reactor = require("js/reactor.js");
-var BagStore = require("js/bag-store");
+var Reactor = require("client/js/reactor.js");
+var BagStore = require("client/js/bag-store");
 
 //================================================
-var Button = require("js/components/button");
-var Field = require("js/components/field");
+var Button = require("client/js/components/button");
+var Field = require("client/js/components/field");
 
 const SubmitPage= React.createClass({
 	displayName: "SubmitPage",

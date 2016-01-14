@@ -986,6 +986,6 @@ module.exports = {
 					});
 				});
 	},
-	ImageList: Immutable.fromJS(require("glob-filename-loader?publicPath=&root=source/client/img/!js/../img.preload"))
+	ImageList: Immutable.fromJS(require("glob-filename-loader?publicPath=&root=source/client/img/!client/js/../img.preload"))
 
 };
