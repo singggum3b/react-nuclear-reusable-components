@@ -49,15 +49,11 @@ require.ensure([], function (require) {
 	$(()=> {
 		$(document.body).append(`<div id="app"></div>`);
 		ReactDOM.render(
-				<Device className="v-coach-app"
+				<Device className="v-app"
 								device={DeviceList}>
 					<Router history={History.createHistory()}>
 						<Route path="/" component={MasterPage}>
 							<IndexRoute component={IndexPage}/>
-							<Route path="/bag/:size" component={IndexPage}>
-								<Route path="submit" component={SubmitPage}>
-								</Route>
-							</Route>
 						</Route>
 					</Router>
 				</Device>

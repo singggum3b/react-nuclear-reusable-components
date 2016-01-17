@@ -1,9 +1,7 @@
 //==================FLUX=========================
 var Reactor = require("client/js/reactor.js");
 //===============================================
-var Bag = require("client/js/views/bag");
 var IntroLogo = require("client/js/views/intro-logo");
-var IntroText = require("client/js/views/intro-text");
 
 var IndexPage = React.createClass({
 	displayName: "IndexPage",
@@ -19,26 +17,16 @@ var IndexPage = React.createClass({
 		return {}
 	},
 	buildIndexPage(props, state) {
-		var mode = this.props.route.path == "/bag/:size" ? "config" : "preview";
 		var className= cx({
-			"v-index-page": true,
-			["-"+mode]: true
+			"v-index-page": true
 		});
 
 		return (
 				<div className={className} >
 					<IntroLogo></IntroLogo>
-					<IntroText visible={mode == "preview"}></IntroText>
-					<div className="v-bag-wrapper">
-						<Bag device={props.device} mode={mode} size={props.params.size}></Bag>
-					</div>
-					<div className="v-bag-chooser-wrapper">
-						<Bag.SizeChooser device={props.device} visible={mode == "preview"} params={props.params} ></Bag.SizeChooser>
-					</div>
 					{this.props.children && React.cloneElement(this.props.children, {
 						device: this.state.device
 					})}
-					{mode == "config" && <Bag.SubmitButton history={this.props.history} size={props.params.size}></Bag.SubmitButton>}
 				</div>
 		)
 	},

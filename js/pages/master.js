@@ -31,7 +31,7 @@ var App = React.createClass({
 		): (
 				<div className="content">
 					<div className="loader">
-						<img src={require("img/not-preloaded/loader.gif")} alt="Preloader"/>
+						<img src={require("client/img/not-preloaded/loader.gif")} alt="Preloader"/>
 						<p>
 							{"LOADING..."}
 						</p>
